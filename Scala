@@ -1,0 +1,48 @@
+Function Programming
+
+Three fundamentals in FP:
+1. Predicates is a multiple parameter function with just one boolean value as a return.
+def isEven(i: Int) = if ( i % 2 == 0) true else false
+
+2. Literal Functions think of it as algebra.
+   Takes functions as arguments( as parameters)
+   Returns a function as a result.
+   (i: Int) => i % 2 == 0
+   => symbol should be thought of as a transformer.
+   
+3. Implicit loops
+   _  symbol denotes the parameter, or the thing(object, function, entity) to be used as input.
+   val oneToTen = List.range(1,10)
+   val evens = nums.filter(_ % 2 == 0)
+   
+ Collections Hierarchy:
+ def foreach[U](f: Elem => U): Unit = {
+     val ite = iterator
+     while (ite.hasNext) f(ite.next())
+ }
+ 
+ Iterator subs: Seq, Set, Map
+ Seq: subs IndexedSeq(Array, arraybuffer, arraystack, stringbuilder,Range, String,Vector), LinearSeq(List, Queue, Stack, Stream, LinkedList, DoubleLinkedList,ListBuffer,MutableList,Queue,Stack) and Buffer.
+ LinearSeq----list, has head, tail, and isEmpty.
+ IndexedSeq---array
+ Buffer-------mutable sequence. insert, remove, add.
+ Map: HashMap, SortedMap, ListMap, TreeMap
+ Map("uno" -> 1, "dos" -> 2, "tres" -> 3)
+ Sets: HashSet, SortedSet, ListSet, BitSet, TreeSet
+ 
+ Traversing:
+ foreach
+ val zahlen = Vector("Eins", "Zwei", "Drei")
+ zahlen.foreach(s => print(s))
+ 
+ def printAChar(c: Char) { print(c) }
+ 
+ for 
+ val smack = Traversable("Spark", "Mesos", "Cassandra", "Akka", "Kafka")
+ for (f <- smack) println(f)
+ 
+ Flattening
+ 
+ 
+ 
+ 
