@@ -1,0 +1,49 @@
+Spark, the engine
+Mesos, the container
+Akka, the model
+Cassandra, the sorage
+Kafka, the broker
+
+Traditional vs. Modern (Big) Data
+continuous stream of events: weather, GPS, vital, logs, device metrics.. is endless.--->need stream of data processing.
+1000 message/second----> millions of messages/second.
+                traditional data                   traditional big data            modern big data
+data source     R/F/MQ                             plus Data services              plus nosql
+data processing Application Server/ETL             plus Hadoop                     plus Spark
+Metadata        Limited by IT                      Limited by model                Automaticall generated, Context enriched, Business oriented, Dictionary based.
+User Cases      Data Migration/movement/Replication  Data lakes/hubs/warehouse     Tools guided, self-service, IoT, Data as Service
+
+
+Spark is not a replacement for Hadoop.
+Spark is a computing engine. Hadoop is a complete stack for storage, cluster management, computing tools.
+
+The Engine: Spark
+Core, SQL, Streaming, MLib, GraphX
+the strongest modern adversary is the Apach Flink project
+
+The Model: Akka
+actor concurrency models:
+Actors are arranged hierarchically
+Asynchronous message passing
+Fault Tolerant
+Customizable failure and detection strategies
+Hierarchical Supervision
+Parallelized
+Load Balance
+Function languages: lisp, Scheme, Erlang, Haskell, Scala, F#
+
+The Broker: Kafka
+publish/subscribe message broker redesigned as a distributed commit log.
+like ActiveMQ, ZeroMQ, RabbitMQ(best,by erlang)
+
+Kafka--alternative to Apache Storm
+
+The Storage: Canssandra
+Extremely fast and scalabe
+Multi data center, no single point of failure
+DynamoDB, HBase, MongoDB, CouchBase, Riak
+
+The Container:
+Mesos combined with Kubernetes or with Docker(more than a competitor, it is a complement to Mesos)
+--equivalent Yarn
+
