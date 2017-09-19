@@ -1,0 +1,37 @@
+1. the number of data sources increases with time. --> data size will become unmanageable.
+2. obtaining a data sample. data size/ data sources increase---> obtaining data samples becomes a herculean task.
+3. time progresses analysis. within minutes, a recommendation or analysis, or prediction will useless.
+4. return is based on analysis velocity.
+
+Infrastructure Needs:
+Distributed system, from multiple processors ----> multiple data centers.
+
+ETL:
+Extract, transform, load. ---> remove extract phase, and remove load phase. 
+
+Lambda Architecture:
+designed to handle massive quantities of data by taking advantage of both batch and stream processing method.
+SMACK---persist in Cassandra, analytics data by Spark, Apache Mesos abstract all the resources from all the interconnected 
+small computers to build a supercomputer with the linear sum of each machine's resources:CPU cores, memory, disk and network.
+
+
+Hadoop:
+MapReduce and HDFS inspired by  the GFS
+size, scope, and data completeness are more important than speed of response.
+
+Data Center Operation:
+Yesterday, everything scaled up.
+Today, everything scales out.
+
+The Data Store Diversification:
+Data allocation is modern concept related to moving the computation resources where the data located.
+before: data -> computing
+now: computing -> data
+Devops(development operations):
+become a movement, a culture, a lifestyle.
+most profitable IT specializations.
+Docker and Spark simplify the movement between testing and production environments.
+
+Yarn ---alternative to Mesos
+Flink --alternative to Spark
+
